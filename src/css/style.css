@@ -45,6 +45,8 @@ body {
 }
 
 nav {
+  top: 0;
+  left: 0;
   position: fixed;
   display: flex;
   width: 100%;
