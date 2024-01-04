@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TebakAngka - Website Game Tebak Angka</title>
+    <script
+      src="https://kit.fontawesome.com/40dd2595d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/icons/remixicon/remixicon.css" />
+    <link href="../src/libs/alerty/css/alertify.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="../src/libs/alerty/css/themes/default.min.css"
+    />
+    <link rel="stylesheet" href="../src/css/games.css" />
+    <link rel="stylesheet" href="../src/libs/toastr.min.css" />
+    <meta
+      name="description"
+      content="Sebuah website game tebak angka sederhana"
+    />
+    <meta
+      name="keywords"
+      content="Tebak Gambar, Tebak Game, Game Tebak Angka, ZyrCros Games"
+    />
+    <link
+      rel="shortcut icon"
+      href="../src/icons/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body onload="loadSound();">
+    <div id="loading" class="loading">
+      <div></div>
+    </div>
+
+    <nav>
+      <a class="logo" href="/">ZyrCros Games</a>
+      <i id="icon" class="ri-arrow-up-down-fill"></i>
+      <ul id="nav-list" class="nav-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Leaderboard</a></li>
+        <li><a href="/">Cek Level</a></li>
+        <li><a href="/">Cheat Level</a></li>
+      </ul>
+    </nav>
+
+    <section id="hero" class="hero">
+      <div class="games" id="games">
+        <iframe
+          style="width: 600px; aspect-ratio: 3/2; border: none"
+          src="https://lottie.host/embed/6d280220-c9ec-4e29-b7c5-34b8a25c62d0/z0ksdVTQWK.json"
+        ></iframe>
+        <div class="games-wrapper">
+          <h1>Tebak Angka</h1>
+          <p>Jawab pertanyaan dengan benar.</p>
+          <ul class="keterangan-list">
+            <li>Benar</li>
+            <li>Salah</li>
+          </ul>
+          <div class="games-main">
+            <label for=""
+              >Clue : <span id="angkaAwal"></span> -
+              <span id="angkaAkhir"></span
+            ></label>
+            <div class="input-wrapper">
+              <input type="number" name="tebakInput" id="tebakInput" required />
+              <i id="submit" class="fa-solid fa-play"></i>
+            </div>
+            <div class="score">
+              <label>Score : <span id="score"></span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"
+      integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../src/libs/notify.min.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="../src/libs/alerty/alertify.min.js"></script>
+    <script src="../src/libs/toastr.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+    <!-- <dotlottie-player src="https://lottie.host/6d280220-c9ec-4e29-b7c5-34b8a25c62d0/z0ksdVTQWK.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player> -->
+    <script src="../src/js/script.js"></script>
+    <script src="../src/js/mainGames.js"></script>
+  </body>
+</html>
